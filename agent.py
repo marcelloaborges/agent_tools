@@ -7,7 +7,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from tools import *
 
 def initialize_agent():
-    os.environ['OPENAI_API_KEY'] = 'sk-None-UYrgNTFk4TjYLNQ0dnX6T3BlbkFJTDopdRybVwanAaD7AaW8'
+    os.environ['OPENAI_API_KEY'] = 'YOUR OPEN AI KEY'
 
     # Create the language model
     llm = ChatOpenAI(model="gpt-3.5-turbo-1106", temperature=0)
