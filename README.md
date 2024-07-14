@@ -19,7 +19,9 @@ The API has only two routes:
 
 Considerations:
  - The current version doesn't have chat history or memory management. This is going to be implemented in a future update.
- - In case of not using LM Studio for the auxiliary LLM, change the LLM model at the <b>tools.py</b> file to the one of your choice.
+ - <b>The installation and exposure of the LLM auxiliary model through the LM Studio is a requirement. Use the following as params:
+   - base_url="http://localhost:1234/v1", api_key="lm-studio"</b>.
+ - In case of not using LM Studio for the auxiliary LLM, change the LLM model at the <b>tools.py</b> file to the one of your choice, or mock the method with a default answer.
 
 API request examples:
  - "/":
